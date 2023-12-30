@@ -12,10 +12,11 @@
       - { name: "expense-backend", folder: "expense-project/CI-Jobs", repo: "https://github.com/raghudevopsb76/expense-backend"}
       - { name: "expense-frontend", folder: "expense-project/CI-Jobs", repo: "https://github.com/raghudevopsb76/expense-frontend"}
     sb_jobs:
-      - { name: "expense-ansible", folder: "expense-project/Infra-Jobs", repo: "https://github.com/raghudevopsb76/expense-ansible"}
-      - { name: "expense-terraform", folder: "expense-project/Infra-Jobs", repo: "https://github.com/raghudevopsb76/expense-terraform"}
-      - { name: "golden-ami", folder: "miscellaneous", repo: "https://github.com/raghudevopsb76/golden-ami"}
-      - { name: "aws-parameters", folder: "miscellaneous", repo: "https://github.com/raghudevopsb76/aws-parameter-store"}
+      - { name: "expense-ansible", folder: "expense-project/Infra-Jobs", repo: "https://github.com/raghudevopsb76/expense-ansible", filename: "Jenkinsfile"}
+      - { name: "expense-terraform", folder: "expense-project/Infra-Jobs", repo: "https://github.com/raghudevopsb76/expense-terraform", filename: "Jenkinsfile"}
+      - { name: "golden-ami", folder: "miscellaneous", repo: "https://github.com/raghudevopsb76/golden-ami", filename: "Jenkinsfile"}
+      - { name: "aws-parameters", folder: "miscellaneous", repo: "https://github.com/raghudevopsb76/aws-parameter-store", filename: "Jenkinsfile"}
+      - { name: "jenkins-ip-update", folder: "miscellaneous", repo: "https://github.com/raghudevopsb76/miscellaneous-tasks", filename: "jenkins-ip-update/Jenkinsfile"}
     fs_jobs:
       - { name: "prometheus-reload", folder: "miscellaneous", filename: "prometheus-reload.xml"}
 
