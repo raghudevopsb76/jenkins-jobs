@@ -14,6 +14,8 @@
     sb_jobs:
       - { name: "expense-ansible", folder: "expense-project/Infra-Jobs", repo: "https://github.com/raghudevopsb76/expense-ansible"}
       - { name: "expense-terraform", folder: "expense-project/Infra-Jobs", repo: "https://github.com/raghudevopsb76/expense-terraform"}
+      - { name: "golden-ami", folder: "miscellaneous", repo: "https://github.com/raghudevopsb76/golden-ami"}
+      - { name: "aws-parameters", folder: "miscellaneous", repo: "https://github.com/raghudevopsb76/aws-parameter-store"}
     fs_jobs:
       - { name: "prometheus-reload", folder: "miscellaneous", filename: "prometheus-reload.xml"}
 
