@@ -30,7 +30,7 @@
     <concurrentBuild>false</concurrentBuild>
     <builders>
         <hudson.tasks.Shell>
-            <command>ansible-playbook -i 172.31.41.244, expense.yml -e role_name=prometheus -e ansible_user=centos -e ansible_password={{ lookup('amazon.aws.aws_ssm', 'jenkins.password', region='us-east-1' ) }}</command>
+            <command>ansible-playbook -i 172.31.41.244, expense.yml -e role_name=prometheus -e ansible_user=centos -e ansible_password={{ lookup('amazon.aws.aws_ssm', 'ssh.password', region='us-east-1' ) }}</command>
             <configuredLocalRules/>
         </hudson.tasks.Shell>
     </builders>
